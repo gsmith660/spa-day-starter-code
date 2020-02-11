@@ -24,3 +24,37 @@ table {
             padding: 10px;
             text-align: center;
 }
+
+.horizontal-container {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+.nail-polish {
+    height: 25px;
+    width: 25px;
+    margin: 5px 5px;
+    padding: 5px;
+}
+
+.pink {
+    background-color: pink;
+}
+
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.purple {
+    background-color: purple;
+}
+
+.red {
+    background-color: red;
+}
