@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8"/>
+    <title></title>
+</head>
+<body>
+
+<h1 th:text="${'Welcome ' + user.username}" th:href="@{/}">Welcome User</h1>
+
+<a th:href="@{/}">Select Services</a>
+
+</body>
+</html>
