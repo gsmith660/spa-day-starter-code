@@ -6,9 +6,11 @@
 </head>
 <body>
 
-<h1 th:text="${'Welcome ' + user.username}" th:href="@{/}">Welcome User</h1>
-
-<a th:href="@{/}">Select Services</a>
+<ul>
+    <th:block th:each="user : ${users}">
+        <li ><a th:text="${user.getUsername()}" th:href="@{/user/{id}(id=${user.id})}"></a></li>
+    </th:block>
+</ul>
 
 </body>
 </html>
