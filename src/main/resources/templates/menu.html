@@ -6,10 +6,17 @@
     <link href="../static/css/styles.css" th:href="@{/css/styles.css}" rel="stylesheet" />
 </head>
 <body>
+
 <h1>My Super Fancy Spa</h1>
+
 <div id = "clientProfile">
+    <h2>My profile</h2>
+    <p th:text="${name}"></p>
+    <p th:text="${skintype}"></p>
+    <p th:text="${manipedi}"></p>
 </div>
-<div id = "servicesMenu">
-</div>
+
+<div id = "servicesMenu"></div>
+
 </body>
 </html>
