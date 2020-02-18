@@ -10,7 +10,8 @@ import org.springframework.web.bind.annotation.*;
 public class UserController {
 
     @GetMapping("/add")
-    public String displayAddUserForm() {
+    public String displayAddUserForm(Model model) {
+        model.addAttribute(new User());
         return "user/add";
     }
 
